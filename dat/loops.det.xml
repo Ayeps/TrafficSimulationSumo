@@ -1,0 +1,7 @@
+<additional>
+    <laneAreaDetector id="idl0" lane="1to2_0" pos="205" freq="30" length="40" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="idl1" lane="4to2_0" pos="208" freq="30" length="40" file="loops.out" friendlyPos="x"/>
+
+    <laneAreaDetector id="idl2" lane="2to3_0" pos="203" freq="30" length="40" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="idl3" lane="7to3_0" pos="208" freq="30" length="40" file="loops.out" friendlyPos="x"/>
+</additional>

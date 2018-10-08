@@ -1,0 +1,55 @@
+<routes>
+<vType accel="1.0" decel="5.0" id="Car" length="2.0" maxSpeed="100.0" sigma="0.0" />
+<route id="route0" edges="1to2 2to3" />
+<route id="route1" edges="4to2 2to5" />
+<vehicle id="0" type="Car" route="route1" depart="1" />
+<vehicle id="1" type="Car" route="route1" depart="3" />
+<vehicle id="2" type="Car" route="route1" depart="4" />
+<vehicle id="3" type="Car" route="route1" depart="6" />
+<vehicle id="4" type="Car" route="route0" depart="7" />
+<vehicle id="5" type="Car" route="route0" depart="10" />
+<vehicle id="6" type="Car" route="route1" depart="11" />
+<vehicle id="7" type="Car" route="route1" depart="13" />
+<vehicle id="8" type="Car" route="route0" depart="15" />
+<vehicle id="9" type="Car" route="route0" depart="16" />
+<vehicle id="10" type="Car" route="route1" depart="19" />
+<vehicle id="11" type="Car" route="route1" depart="21" />
+<vehicle id="12" type="Car" route="route1" depart="24" />
+<vehicle id="13" type="Car" route="route1" depart="26" />
+<vehicle id="14" type="Car" route="route1" depart="29" />
+<vehicle id="15" type="Car" route="route0" depart="31" />
+<vehicle id="16" type="Car" route="route1" depart="33" />
+<vehicle id="17" type="Car" route="route0" depart="35" />
+<vehicle id="18" type="Car" route="route1" depart="36" />
+<vehicle id="19" type="Car" route="route1" depart="40" />
+<vehicle id="20" type="Car" route="route0" depart="41" />
+<vehicle id="21" type="Car" route="route0" depart="42" />
+<vehicle id="22" type="Car" route="route1" depart="46" />
+<vehicle id="23" type="Car" route="route0" depart="47" />
+<vehicle id="24" type="Car" route="route0" depart="48" />
+<vehicle id="25" type="Car" route="route0" depart="50" />
+<vehicle id="26" type="Car" route="route0" depart="51" />
+<vehicle id="27" type="Car" route="route1" depart="54" />
+<vehicle id="28" type="Car" route="route1" depart="58" />
+<vehicle id="29" type="Car" route="route0" depart="62" />
+<vehicle id="30" type="Car" route="route0" depart="66" />
+<vehicle id="31" type="Car" route="route0" depart="70" />
+<vehicle id="32" type="Car" route="route1" depart="71" />
+<vehicle id="33" type="Car" route="route0" depart="75" />
+<vehicle id="34" type="Car" route="route1" depart="78" />
+<vehicle id="35" type="Car" route="route0" depart="82" />
+<vehicle id="36" type="Car" route="route1" depart="83" />
+<vehicle id="37" type="Car" route="route1" depart="85" />
+<vehicle id="38" type="Car" route="route1" depart="87" />
+<vehicle id="39" type="Car" route="route1" depart="88" />
+<vehicle id="40" type="Car" route="route1" depart="90" />
+<vehicle id="41" type="Car" route="route1" depart="91" />
+<vehicle id="42" type="Car" route="route0" depart="95" />
+<vehicle id="43" type="Car" route="route1" depart="96" />
+<vehicle id="44" type="Car" route="route1" depart="99" />
+<vehicle id="45" type="Car" route="route1" depart="102" />
+<vehicle id="46" type="Car" route="route0" depart="103" />
+<vehicle id="47" type="Car" route="route0" depart="105" />
+<vehicle id="48" type="Car" route="route0" depart="108" />
+<vehicle id="49" type="Car" route="route0" depart="109" />
+</routes>
