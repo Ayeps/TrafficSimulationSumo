@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 09/10/2018 14:53:49 by Netedit Version 0.32.0
+<!-- generated on 09/10/2018 15:38:08 by Netedit Version 0.32.0
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
@@ -751,21 +751,16 @@
         <lane id="venancio010tovenancio011_1" index="1" disallow="tram rail_urban rail rail_electric ship" speed="22.22" length="151.42" shape="967.79,231.93 1025.92,246.69 1114.54,269.22"/>
     </edge>
 
-    <tlLogic id="5221797998" type="static" programID="0" offset="0">
-        <phase duration="80" state="G"/>
-        <phase duration="5" state="y"/>
-        <phase duration="5" state="r"/>
-    </tlLogic>
     <tlLogic id="639117529" type="static" programID="0" offset="0">
-        <phase duration="40" state="GGrrG"/>
+        <phase duration="27" state="GGrrG"/>
         <phase duration="5" state="yyrry"/>
-        <phase duration="40" state="rrGGG"/>
+        <phase duration="42" state="rrGGG"/>
         <phase duration="5" state="rryyy"/>
     </tlLogic>
     <tlLogic id="639117530" type="static" programID="0" offset="0">
-        <phase duration="40" state="GGrr"/>
+        <phase duration="27" state="GGrr"/>
         <phase duration="5" state="yyrr"/>
-        <phase duration="40" state="rrGG"/>
+        <phase duration="31" state="rrGG"/>
         <phase duration="5" state="rryy"/>
     </tlLogic>
     <tlLogic id="645360789" type="static" programID="0" offset="0">
@@ -775,39 +770,45 @@
         <phase duration="5" state="rryy"/>
     </tlLogic>
     <tlLogic id="645360801" type="static" programID="0" offset="0">
-        <phase duration="40" state="GGGGrrrr"/>
+        <phase duration="25" state="GGGGrrrr"/>
         <phase duration="5" state="yyyyrrrr"/>
-        <phase duration="40" state="rrrrGGGG"/>
+        <phase duration="45" state="rrrrGGGG"/>
         <phase duration="5" state="rrrryyyy"/>
     </tlLogic>
     <tlLogic id="645360803" type="static" programID="0" offset="0">
-        <phase duration="40" state="GGGrrrr"/>
+        <phase duration="45" state="GGGrrrr"/>
         <phase duration="5" state="yyyrrrr"/>
-        <phase duration="40" state="rrrGGGG"/>
+        <phase duration="20" state="rrrGGGG"/>
         <phase duration="5" state="rrryyyy"/>
     </tlLogic>
     <tlLogic id="645360804" type="static" programID="0" offset="0">
-        <phase duration="40" state="GGrr"/>
+        <phase duration="18" state="GGrr"/>
         <phase duration="5" state="yyrr"/>
-        <phase duration="40" state="rrGG"/>
+        <phase duration="24" state="rrGG"/>
         <phase duration="5" state="rryy"/>
     </tlLogic>
     <tlLogic id="647407824" type="static" programID="0" offset="0">
-        <phase duration="40" state="GGGrrG"/>
+        <phase duration="15" state="GGGrrG"/>
         <phase duration="5" state="yyyrry"/>
-        <phase duration="40" state="rrrGGG"/>
+        <phase duration="35" state="rrrGGG"/>
         <phase duration="5" state="rrryyy"/>
     </tlLogic>
     <tlLogic id="647407827" type="static" programID="0" offset="0">
-        <phase duration="40" state="GGGrrrGG"/>
+        <phase duration="33" state="GGGrrrGG"/>
         <phase duration="5" state="yyyrrryy"/>
-        <phase duration="40" state="rrrGGGGG"/>
+        <phase duration="16" state="rrrGGGGG"/>
         <phase duration="5" state="rrryyyyy"/>
     </tlLogic>
     <tlLogic id="647407829" type="static" programID="0" offset="0">
-        <phase duration="40" state="GGrG"/>
+        <phase duration="27" state="GGrG"/>
         <phase duration="5" state="yyry"/>
-        <phase duration="40" state="rrGG"/>
+        <phase duration="22" state="rrGG"/>
+        <phase duration="5" state="rryy"/>
+    </tlLogic>
+    <tlLogic id="valandro003" type="static" programID="0" offset="0">
+        <phase duration="27" state="GGrr"/>
+        <phase duration="5" state="yyrr"/>
+        <phase duration="22" state="rrGG"/>
         <phase duration="5" state="rryy"/>
     </tlLogic>
 
@@ -1056,7 +1057,7 @@
     <junction id="valandro002" type="priority" x="521.12" y="113.46" incLanes="valandro001tovalandro002_0" intLanes=":valandro002_0_0" shape="522.70,113.74 519.62,112.89 519.54,113.18 522.62,114.03">
         <request index="0" response="0" foes="0" cont="0"/>
     </junction>
-    <junction id="valandro003" type="priority" x="520.02" y="117.48" incLanes="valandro002tovalandro003_0 venancio002tovalandro003_0" intLanes=":valandro003_0_0 :valandro003_1_0 :valandro003_2_0 :valandro003_3_0" shape="522.70,119.78 523.45,116.67 522.39,114.87 519.31,114.02 517.37,115.17 516.60,118.28 517.66,120.09 520.75,120.92">
+    <junction id="valandro003" type="traffic_light" x="520.02" y="117.48" incLanes="valandro002tovalandro003_0 venancio002tovalandro003_0" intLanes=":valandro003_0_0 :valandro003_1_0 :valandro003_2_0 :valandro003_3_0" shape="522.70,119.78 523.45,116.67 522.39,114.87 519.31,114.02 517.37,115.17 516.60,118.28 517.66,120.09 520.75,120.92">
         <request index="0" response="0100" foes="0100" cont="0"/>
         <request index="1" response="1100" foes="1100" cont="0"/>
         <request index="2" response="0000" foes="0011" cont="0"/>
@@ -1082,7 +1083,7 @@
     </junction>
     <junction id="valandro008" type="dead_end" x="412.21" y="526.40" incLanes="valandro007tovalandro008_0" intLanes="" shape="413.76,526.79 410.66,526.01"/>
     <junction id="venancio001" type="dead_end" x="336.29" y="72.11" incLanes="" intLanes="" shape="335.91,73.66 336.67,70.56"/>
-    <junction id="venancio002" type="traffic_light" x="515.69" y="116.40" incLanes="venancio001tovenancio002_0" intLanes=":venancio002_0_0" shape="515.45,117.99 516.22,114.88 515.93,114.81 515.16,117.92">
+    <junction id="venancio002" type="priority" x="515.69" y="116.40" incLanes="venancio001tovenancio002_0" intLanes=":venancio002_0_0" shape="515.45,117.99 516.22,114.88 515.93,114.81 515.16,117.92">
         <request index="0" response="0" foes="0" cont="0"/>
     </junction>
     <junction id="venancio003" type="priority" x="688.79" y="158.91" incLanes="valandro003tovenancio003_0" intLanes=":venancio003_0_0" shape="688.55,160.50 689.32,157.39 689.03,157.32 688.26,160.43">
@@ -1251,8 +1252,8 @@
     <connection from="silva007tosilva008" to="silva008tosilva009" fromLane="0" toLane="0" via=":silva008_0_0" dir="s" state="M"/>
     <connection from="silva007tosilva008" to="silva008tosilva009" fromLane="1" toLane="1" via=":silva008_0_1" dir="s" state="M"/>
     <connection from="valandro001tovalandro002" to="valandro002tovalandro003" fromLane="0" toLane="0" via=":valandro002_0_0" dir="s" state="M"/>
-    <connection from="valandro002tovalandro003" to="valandro003tovenancio003" fromLane="0" toLane="0" via=":valandro003_0_0" dir="r" state="m"/>
-    <connection from="valandro002tovalandro003" to="valandro003tovalandro004" fromLane="0" toLane="0" via=":valandro003_1_0" dir="s" state="m"/>
+    <connection from="valandro002tovalandro003" to="valandro003tovenancio003" fromLane="0" toLane="0" via=":valandro003_0_0" tl="valandro003" linkIndex="0" dir="r" state="o"/>
+    <connection from="valandro002tovalandro003" to="valandro003tovalandro004" fromLane="0" toLane="0" via=":valandro003_1_0" tl="valandro003" linkIndex="1" dir="s" state="o"/>
     <connection from="valandro003tovalandro004" to="valandro004tovalandro005" fromLane="0" toLane="0" via=":valandro004_0_0" dir="s" state="M"/>
     <connection from="valandro003tovenancio003" to="venancio003tofloriano008" fromLane="0" toLane="0" via=":venancio003_0_0" dir="s" state="M"/>
     <connection from="valandro004tovalandro005" to="valandro005tovalandro006" fromLane="0" toLane="0" via=":valandro005_2_0" tl="645360789" linkIndex="2" dir="s" state="o"/>
@@ -1261,9 +1262,9 @@
     <connection from="valandro005tovalandro006" to="valandro006tovalandro007" fromLane="0" toLane="0" via=":valandro006_1_0" dir="s" state="m"/>
     <connection from="valandro006tosilva003" to="silva003tosilva004" fromLane="0" toLane="0" via=":silva003_0_0" dir="s" state="M"/>
     <connection from="valandro006tovalandro007" to="valandro007tovalandro008" fromLane="0" toLane="0" via=":valandro007_0_0" dir="s" state="M"/>
-    <connection from="venancio001tovenancio002" to="venancio002tovalandro003" fromLane="0" toLane="0" via=":venancio002_0_0" tl="5221797998" linkIndex="0" dir="s" state="o"/>
-    <connection from="venancio002tovalandro003" to="valandro003tovenancio003" fromLane="0" toLane="0" via=":valandro003_2_0" dir="s" state="M"/>
-    <connection from="venancio002tovalandro003" to="valandro003tovalandro004" fromLane="0" toLane="0" via=":valandro003_3_0" dir="l" state="M"/>
+    <connection from="venancio001tovenancio002" to="venancio002tovalandro003" fromLane="0" toLane="0" via=":venancio002_0_0" dir="s" state="M"/>
+    <connection from="venancio002tovalandro003" to="valandro003tovenancio003" fromLane="0" toLane="0" via=":valandro003_2_0" tl="valandro003" linkIndex="2" dir="s" state="o"/>
+    <connection from="venancio002tovalandro003" to="valandro003tovalandro004" fromLane="0" toLane="0" via=":valandro003_3_0" tl="valandro003" linkIndex="3" dir="l" state="o"/>
     <connection from="venancio003tofloriano008" to="floriano008tofloriano009" fromLane="0" toLane="0" via=":floriano008_0_0" tl="639117530" linkIndex="0" dir="r" state="o"/>
     <connection from="venancio003tofloriano008" to="floriano008tovenancio004" fromLane="0" toLane="0" via=":floriano008_1_0" tl="639117530" linkIndex="1" dir="s" state="o"/>
     <connection from="venancio004tovenancio005" to="venancio005tovenancio006" fromLane="0" toLane="0" via=":venancio005_0_0" dir="s" state="M"/>
