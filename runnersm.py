@@ -17,18 +17,30 @@ from Network import Network
 from Manage import Manage
 from Detectors import Detectors
 
-flow = Flow(150,"datsm/routes.rou.xml")
+flow = Flow(500,"datsm/routes.rou.xml")
 v = Vehicle()
 r = Routes()
 
 det = Detectors()
 tfs = TrafficLights()
 
-r.add("routefloriano","floriano001tofloriano002 floriano002tofloriano003 floriano003tofloriano004 floriano004tofloriano005 floriano005tofloriano006 floriano006tofloriano007 floriano007tofloriano008 floriano008tofloriano009")
+#r.add("routefloriano","floriano001tofloriano002 floriano002tofloriano003 floriano003tofloriano004 floriano004tofloriano005 floriano005tofloriano006 floriano006tofloriano007 floriano007tofloriano008 floriano008tofloriano009")
+
+r.load('datsm/rotas.txt')
 
 tfs.add("floriano003")
 tfs.add("floriano005")
 tfs.add("floriano008")
+
+tfs.add("valandro003")
+tfs.add("valandro005")
+
+tfs.add("riobranco103")
+tfs.add("riobranco108")
+tfs.add("riobranco113")
+
+tfs.add("riobranco012")
+tfs.add("riobranco008")
 
 def run():
     step = 0
