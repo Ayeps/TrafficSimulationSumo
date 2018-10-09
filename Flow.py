@@ -8,10 +8,11 @@ import random
 
 class Flow():
 
-    def __init__(self,number_vehicles,filename):
+    def __init__(self,number_vehicles,filename,intensity=1):
         self.number_vehicles = number_vehicles
         self.filename = filename
         self.routes = open(self.filename, "w")
+        self.intensity = intensity
     
     def generate(self,vehicle,route):
         print("<routes>",file=self.routes)
@@ -21,7 +22,7 @@ class Flow():
             route.build(i,self.routes)
         for i in range(self.number_vehicles):
             rc = random.randint(0,route.count-1)
-            t = random.randint(0,3)
+            t = random.randint(0,self.intensity)
             vehicle.build(i,route.name(rc),t+ant,self.routes)
             ant+=t+1
         print("</routes>", file=self.routes)

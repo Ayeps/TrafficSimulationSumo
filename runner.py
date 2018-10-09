@@ -14,35 +14,40 @@ from Vehicle import Vehicle
 from Routes import Routes
 from TrafficLights import TrafficLights
 from Network import Network
+from Manage import Manage
+from Detectors import Detectors
 
-flow = Flow(50,"dat/routes.rou.xml")
+flow = Flow(150,"dat/routes.rou.xml")
 v = Vehicle()
 r = Routes()
+
+det = Detectors()
 tfs = TrafficLights()
 
-r.add("route0","1to2 2to3")
+r.add("route0","1to2 2to3 3to6")
 r.add("route1","4to2 2to5")
+r.add("route2","7to3 3to8")
 
 tfs.add("n2")
 tfs.add("n3")
 
+det.add("idl0")
+det.add("idl1")
+det.add("idl2")
+det.add("idl3")
+
+mng = Manage(det,tfs)
+
+mng.add(["idl0","idl1"],"n2",'lqf')
+mng.add(["idl2","idl3"],"n3",'lqf')
+
 def run():
     step = 0
-    tfs.setPhase("n2",2)
-    phase=2
     t = time.time()
-    idl0 = traci.lanearea.getLastStepVehicleNumber("idl0")
-    idl1 = traci.lanearea.getLastStepVehicleNumber("idl1")
     while True:
         if(time.time()-t>1):
-            idl0 = traci.lanearea.getLastStepVehicleNumber("idl0")
-            idl1 = traci.lanearea.getLastStepVehicleNumber("idl1")
-            t=time.time()
-        if(idl0>idl1):
-            phase=2
-        else:
-            phase=0
-        tfs.setPhase("n2", phase)
+            mng.run()
+        mng.signal()
         traci.simulationStep()
         step += 1
     traci.close()
