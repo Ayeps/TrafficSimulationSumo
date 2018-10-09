@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 09/10/2018 12:44:38 by Netedit Version 0.32.0
+<!-- generated on 09/10/2018 13:09:41 by Netedit Version 0.32.0
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
 
     <input>
-        <sumo-net-file value="C:\Users\Leonardo\Python\Sumo\SantaMaria\dat\netsm.net.xml"/>
+        <sumo-net-file value="C:\Users\Leonardo\Python\Sumo\SantaMaria\datsm\netsm.net.xml"/>
     </input>
 
     <output>
-        <output-file value="C:\Users\Leonardo\Python\Sumo\SantaMaria\dat\netsm.net.xml"/>
+        <output-file value="C:\Users\Leonardo\Python\Sumo\SantaMaria\datsm\netsm.net.xml"/>
     </output>
 
     <processing>

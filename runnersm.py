@@ -24,30 +24,15 @@ r = Routes()
 det = Detectors()
 tfs = TrafficLights()
 
-r.add("route0","1to2 2to3 3to6")
-r.add("route1","4to2 2to5")
-r.add("route2","7to3 3to8")
+r.add("routefloriano","floriano001tofloriano002 floriano002tofloriano003 floriano003tofloriano004 floriano004tofloriano005 floriano005tofloriano006 floriano006tofloriano007 floriano007tofloriano008 floriano008tofloriano009")
 
-tfs.add("n2")
-tfs.add("n3")
-
-det.add("idl0")
-det.add("idl1")
-det.add("idl2")
-det.add("idl3")
-
-mng = Manage(det,tfs)
-
-mng.add(["idl0","idl1"],"n2",'lqf')
-mng.add(["idl2","idl3"],"n3",'lqf')
+tfs.add("floriano003")
+tfs.add("floriano005")
+tfs.add("floriano008")
 
 def run():
     step = 0
-    t = time.time()
     while True:
-        if(time.time()-t>1):
-            mng.run()
-        mng.signal()
         traci.simulationStep()
         step += 1
     traci.close()
