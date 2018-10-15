@@ -42,11 +42,17 @@ tfs.add("riobranco113")
 tfs.add("riobranco012")
 tfs.add("riobranco008")
 
+mng = Manage(det,tfs)
+
+mng.add(["venancio01","valandro02"],"valandro003",'lqf')
+
 def run():
     step = 0
     while True:
+        mng.run(2)
         traci.simulationStep()
         step += 1
+        mng.signal()
     traci.close()
     sys.stdout.flush()
 
