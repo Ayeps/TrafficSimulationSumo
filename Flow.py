@@ -19,7 +19,32 @@ class Flow():
             self.lines[l] = self.lines[l].replace('\n','')
         print(self.lines)
     
+    def sec(self,elem):
+        return elem[1]
+
     def generate(self,vehicle,route):
+        print("<routes>",file=self.routes)
+        vehicle.plan(self.routes)
+        ant=0
+        for i in range(route.count):
+            route.build(i,self.routes)
+        i=0
+        self.depart = []
+        while i<self.number_vehicles:
+            temp = []
+            for r in range(len(self.lines)):
+                t = random.randint(0,self.intensity)
+                temp.append([i,t+ant,r])
+                i+=1
+            ant+=t+self.intensity
+            temp.sort(key=self.sec)
+            self.depart.extend(temp)
+        for v in self.depart:
+            vehicle.build(v[0],self.lines[v[2]],v[1],self.routes)
+        print("</routes>", file=self.routes)
+        self.routes.close()
+
+    '''def generate(self,vehicle,route):
         print("<routes>",file=self.routes)
         vehicle.plan(self.routes)
         ant=0
@@ -33,4 +58,4 @@ class Flow():
             vehicle.build(i,self.lines[rc],t+ant,self.routes)
             ant+=t+1
         print("</routes>", file=self.routes)
-        self.routes.close()
+        self.routes.close()'''

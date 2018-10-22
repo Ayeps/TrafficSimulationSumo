@@ -1,20 +1,6 @@
 <additional>
 
-    <inductionLoop id="floriano001tofloriano002" lane="floriano001tofloriano002_0" pos="109.79" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="floriano006tofloriano007" lane="floriano006tofloriano007_0" pos="55.30" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="riobranco006toriobranco007_0" lane="riobranco006toriobranco007_0" pos="21.03" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="riobranco006toriobranco007_1" lane="riobranco006toriobranco007_1" pos="21.53" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="riobranco101toriobranco102_0" lane="riobranco101toriobranco102_0" pos="41.83" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="riobranco101toriobranco102_1" lane="riobranco101toriobranco102_1" pos="39.07" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="riobranco101toriobranco102_2" lane="riobranco101toriobranco102_2" pos="41.25" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="riobranco106toriobranco107_0" lane="riobranco106toriobranco107_0" pos="26.73" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="riobranco106toriobranco107_1" lane="riobranco106toriobranco107_1" pos="25.26" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="riobranco106toriobranco107_2" lane="riobranco106toriobranco107_2" pos="25.30" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="silva003tosilva004" lane="silva004tofloriano003_0" pos="3.84" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="valandro001tovalandro002" lane="valandro001tovalandro002_0" pos="62.46" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="valandro003tovalandro004" lane="valandro003tovalandro004_0" pos="148.66" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="valandro003tovenancio003" lane="valandro003tovenancio003_0" pos="169.65" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="venancio001tovenancio002" lane="venancio001tovenancio002_0" pos="180.34" freq="100.00" file="detecs.out" friendlyPos="0"/>
-    <inductionLoop id="venancio005tovenancio006" lane="venancio005tovenancio006_0" pos="35.72" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="valandro02" lane="valandro001tovalandro002_0" pos="62.70" freq="100.00" file="e1Detector_valandro001tovalandro002_0_1.txt" friendlyPos="0"/>
+    <e1Detector id="venancio01" lane="venancio001tovenancio002_0" pos="184.5" freq="100.00" file="e1Detector_venancio001tovenancio002_0_0.txt" friendlyPos="0"/>
  
 </additional>

@@ -22,21 +22,14 @@ class Manage():
 
     def zip(self,detector,tf,i):
         index = self.traffic_lights.index(tf)
-        queue = self.traffic_lights.queues[index]
-        detectors = self.traffic_lights.detectors[index]
-        d0 = self.detectors.get(detectors[0])
-        d1 = self.detectors.get(detectors[1])
-        for x in d0:
-            if(x not in queue):
-                queue[0].append(x)
-        for x in d1:
-            if(x not in queue):
-                queue[1].append(x)
-        phase = self.traffic_lights.getPhase(tf)
-        if(phase==0):
-            self.signals[index]=2
-        else:
-            self.signals[index]=0
+        cars = traci.inductionloop.getLastStepVehicleNumber(detector[0])
+        cars1 = traci.inductionloop.getLastStepVehicleNumber(detector[1])
+        if cars > cars1:
+            if self.signals[index] == 0:
+                self.signals[index] = 2
+        elif cars1 > cars:
+            if self.signals[index] == 2:
+                self.signals[index] = 0
     
     # longest queue first
     def lqf(self,detector,tf,i):
@@ -64,10 +57,10 @@ class Manage():
             self.traffic_lights.lqfflag[index]=0
             if(self.signals[index]==0):
                 self.signals[index]=2
-            elif(idl0<idl1):
+            elif(self.signals[index]==2):
                 self.signals[index]=0
-            
-
+            #elif(idl0<idl1):
+            #    self.signals[index]=0
     
     # arrival time at traffic light
     def attl(self,detector,tf,i):
@@ -157,9 +150,8 @@ class Manage():
             self.traffic_lights.setPhase(tf, phase)
             j+=1
     
-    def run(self,t_time,steps):
+    def run(self,t_time,steps,cheating_rate=0):
         i=0
-        #self.updateVehiclesRoutes()
         if(time.time()-self.time_e>t_time):
             for tf in self.traffic_lights.traffic_lights:
                 detector = self.traffic_lights.detectors[i]
