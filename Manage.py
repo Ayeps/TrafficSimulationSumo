@@ -19,9 +19,6 @@ class Manage():
         self.time_e = time.time()
         self.running_vehicles = []
         self.step = 0
-    
-    def add(self,detectors,traffic_light,traffic_light_algorithm):
-        self.intersects.append([detectors,traffic_light,traffic_light_algorithm])
 
     def zip(self,detector,tf,i):
         index = self.traffic_lights.index(tf)
