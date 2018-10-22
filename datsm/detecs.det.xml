@@ -1,6 +1,6 @@
 <additional>
 
-    <e1Detector id="valandro02" lane="valandro001tovalandro002_0" pos="62.70" freq="100.00" file="e1Detector_valandro001tovalandro002_0_1.txt" friendlyPos="0"/>
-    <e1Detector id="venancio01" lane="venancio001tovenancio002_0" pos="184.5" freq="100.00" file="e1Detector_venancio001tovenancio002_0_0.txt" friendlyPos="0"/>
+    <e1Detector id="valandro02" lane="valandro001tovalandro002_0" pos="65" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="venancio01" lane="venancio001tovenancio002_0" pos="183.5" freq="100.00" file="detecs.out" friendlyPos="0"/>
  
 </additional>

@@ -17,7 +17,6 @@ class Flow():
         self.lines = f.readlines()
         for l in range(len(self.lines)):
             self.lines[l] = self.lines[l].replace('\n','')
-        print(self.lines)
     
     def sec(self,elem):
         return elem[1]

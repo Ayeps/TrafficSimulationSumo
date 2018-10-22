@@ -1,4 +1,0 @@
-tempo de chegada: 259
-real: 282.0
-zip: 
-lqf: 270.0
