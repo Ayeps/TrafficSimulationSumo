@@ -4,14 +4,24 @@ class TrafficLights():
 
     def __init__(self):
         self.traffic_lights = []
-        self.traffic_lights_positions = []
         self.crossings = []
+        self.traffic_lights_positions = []
+        self.detectors = []
+        self.algorighms = []
         self.order = []
+        self.signal = []
+        self.queues = []
+        self.lqfflag = []
     
-    def add(self,tf,route_cross):
+    def add(self,tf,route_cross,signals,detectors,alg):
         self.traffic_lights.append(tf)
         self.crossings.append(route_cross)
+        self.signal.append(signals)
+        self.detectors.append(detectors)
+        self.algorighms.append(alg)
         self.order.append([])
+        self.lqfflag.append(0)
+        self.queues.append([ [],[] ])
     
     def getRoutes(self,i):
         return self.crossings[i]

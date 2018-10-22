@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 18/10/2018 13:59:56 by SUMO gui Version 0.32.0
+<!-- generated on 18/10/2018 23:17:13 by SUMO gui Version 0.32.0
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
@@ -11,33 +11,37 @@
         <additional-files value="datsm/loops.det.xml,datsm/detecs.det.xml"/>
     </input>
 
+    <output>
+        <tripinfo-output value="tripinfo.xml"/>
+    </output>
+
     <time>
         <begin value="0"/>
         <end value="30"/>
     </time>
 
     <traci_server>
-        <remote-port value="50165"/>
+        <remote-port value="50303"/>
     </traci_server>
 
 </configuration>
 -->
 
 <detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
-    <interval begin="0.00" end="15.00" id="floriano001tofloriano002" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="floriano006tofloriano007" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="riobranco006toriobranco007_0" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="riobranco006toriobranco007_1" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="riobranco101toriobranco102_0" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="riobranco101toriobranco102_1" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="riobranco101toriobranco102_2" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="riobranco106toriobranco107_0" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="riobranco106toriobranco107_1" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="riobranco106toriobranco107_2" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="silva003tosilva004" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="valandro001tovalandro002" nVehContrib="1" flow="240.00" occupancy="2.42" speed="11.00" length="4.00" nVehEntered="1"/>
-    <interval begin="0.00" end="15.00" id="valandro003tovalandro004" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="valandro003tovenancio003" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="venancio001tovenancio002" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="15.00" id="venancio005tovenancio006" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="74.00" id="floriano001tofloriano002" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="74.00" id="floriano006tofloriano007" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="74.00" id="riobranco006toriobranco007_0" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="74.00" id="riobranco006toriobranco007_1" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="74.00" id="riobranco101toriobranco102_0" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="74.00" id="riobranco101toriobranco102_1" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="74.00" id="riobranco101toriobranco102_2" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="74.00" id="riobranco106toriobranco107_0" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="74.00" id="riobranco106toriobranco107_1" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="74.00" id="riobranco106toriobranco107_2" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="74.00" id="silva003tosilva004" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="74.00" id="valandro001tovalandro002" nVehContrib="11" flow="535.14" occupancy="6.62" speed="10.29" length="4.00" nVehEntered="11"/>
+    <interval begin="0.00" end="74.00" id="valandro003tovalandro004" nVehContrib="10" flow="486.49" occupancy="36.63" speed="7.12" length="4.00" nVehEntered="10"/>
+    <interval begin="0.00" end="74.00" id="valandro003tovenancio003" nVehContrib="2" flow="97.30" occupancy="0.57" speed="19.00" length="4.00" nVehEntered="2"/>
+    <interval begin="0.00" end="74.00" id="venancio001tovenancio002" nVehContrib="10" flow="486.49" occupancy="9.11" speed="7.07" length="4.00" nVehEntered="10"/>
+    <interval begin="0.00" end="74.00" id="venancio005tovenancio006" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
 </detector>

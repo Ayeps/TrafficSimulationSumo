@@ -7,7 +7,7 @@
     <laneAreaDetector id="venancio02" lane="valandro003tovenancio003_0" pos="136" freq="30" length="35" file="loops.out" friendlyPos="x"/>
     <laneAreaDetector id="venancio03" lane="venancio004tovenancio005_0" pos="67" freq="30" length="35" file="loops.out" friendlyPos="x"/>
 
-    <laneAreaDetector id="andradas03" lane="riobranco108toandradas010_0" pos="143" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="andradas03" lane="riobranco108toandradas010_0" pos="120" freq="30" length="55" file="loops.out" friendlyPos="x"/>
     <laneAreaDetector id="andradas04" lane="floriano005toandradas011_0" pos="136" freq="30" length="35" file="loops.out" friendlyPos="x"/>
 
 

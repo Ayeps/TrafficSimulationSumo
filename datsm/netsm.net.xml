@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 15/10/2018 15:59:41 by Netedit Version 0.32.0
+<!-- generated on 19/10/2018 17:25:25 by Netedit Version 0.32.0
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
@@ -757,18 +757,6 @@
         <phase duration="42" state="rrGGG"/>
         <phase duration="5" state="rryyy"/>
     </tlLogic>
-    <tlLogic id="639117530" type="static" programID="0" offset="0">
-        <phase duration="27" state="GGrr"/>
-        <phase duration="5" state="yyrr"/>
-        <phase duration="31" state="rrGG"/>
-        <phase duration="5" state="rryy"/>
-    </tlLogic>
-    <tlLogic id="645360789" type="static" programID="0" offset="0">
-        <phase duration="40" state="GGrr"/>
-        <phase duration="5" state="yyrr"/>
-        <phase duration="40" state="rrGG"/>
-        <phase duration="5" state="rryy"/>
-    </tlLogic>
     <tlLogic id="645360801" type="static" programID="0" offset="0">
         <phase duration="25" state="GGGGrrrr"/>
         <phase duration="5" state="yyyyrrrr"/>
@@ -780,12 +768,6 @@
         <phase duration="5" state="yyyrrrr"/>
         <phase duration="20" state="rrrGGGG"/>
         <phase duration="5" state="rrryyyy"/>
-    </tlLogic>
-    <tlLogic id="645360804" type="static" programID="0" offset="0">
-        <phase duration="18" state="GGrr"/>
-        <phase duration="5" state="yyrr"/>
-        <phase duration="24" state="rrGG"/>
-        <phase duration="5" state="rryy"/>
     </tlLogic>
     <tlLogic id="647407824" type="static" programID="0" offset="0">
         <phase duration="15" state="GGGrrG"/>
@@ -799,16 +781,34 @@
         <phase duration="16" state="rrrGGGGG"/>
         <phase duration="5" state="rrryyyyy"/>
     </tlLogic>
-    <tlLogic id="647407829" type="static" programID="0" offset="0">
-        <phase duration="27" state="GGrG"/>
+    <tlLogic id="floriano003" type="static" programID="0" offset="0">
+        <phase duration="27" state="rrGG"/>
         <phase duration="5" state="yyry"/>
-        <phase duration="22" state="rrGG"/>
+        <phase duration="22" state="GGrr"/>
+        <phase duration="5" state="rryy"/>
+    </tlLogic>
+    <tlLogic id="floriano005" type="static" programID="0" offset="0">
+        <phase duration="18" state="rrGG"/>
+        <phase duration="5" state="yyrr"/>
+        <phase duration="24" state="GGrr"/>
+        <phase duration="5" state="rryy"/>
+    </tlLogic>
+    <tlLogic id="floriano008" type="static" programID="0" offset="0">
+        <phase duration="27" state="rrGG"/>
+        <phase duration="5" state="yyrr"/>
+        <phase duration="31" state="GGrr"/>
         <phase duration="5" state="rryy"/>
     </tlLogic>
     <tlLogic id="valandro003" type="static" programID="0" offset="0">
         <phase duration="27" state="GGrr"/>
         <phase duration="5" state="yyrr"/>
         <phase duration="22" state="rrGG"/>
+        <phase duration="5" state="rryy"/>
+    </tlLogic>
+    <tlLogic id="valandro005" type="static" programID="0" offset="0">
+        <phase duration="40" state="GGrr"/>
+        <phase duration="5" state="yyrr"/>
+        <phase duration="40" state="rrGG"/>
         <phase duration="5" state="rryy"/>
     </tlLogic>
 
@@ -1142,23 +1142,23 @@
     <connection from="andradas009toriobranco108" to="riobranco108toandradas010" fromLane="0" toLane="0" via=":riobranco108_0_0" tl="645360803" linkIndex="0" dir="s" state="o"/>
     <connection from="andradas009toriobranco108" to="riobranco108toriobranco109" fromLane="1" toLane="1" via=":riobranco108_1_0" tl="645360803" linkIndex="1" dir="l" state="o"/>
     <connection from="andradas009toriobranco108" to="riobranco108toriobranco109" fromLane="2" toLane="2" via=":riobranco108_2_0" tl="645360803" linkIndex="2" dir="l" state="o"/>
-    <connection from="andradas010tofloriano005" to="floriano005toandradas011" fromLane="0" toLane="0" via=":floriano005_0_0" tl="645360804" linkIndex="0" dir="s" state="o"/>
-    <connection from="andradas010tofloriano005" to="floriano005tofloriano006" fromLane="0" toLane="0" via=":floriano005_1_0" tl="645360804" linkIndex="1" dir="l" state="o"/>
-    <connection from="andradas011tovalandro005" to="valandro005tovalandro006" fromLane="0" toLane="0" via=":valandro005_0_0" tl="645360789" linkIndex="0" dir="r" state="o"/>
-    <connection from="andradas011tovalandro005" to="valandro005toandradas012" fromLane="0" toLane="0" via=":valandro005_1_0" tl="645360789" linkIndex="1" dir="s" state="o"/>
+    <connection from="andradas010tofloriano005" to="floriano005toandradas011" fromLane="0" toLane="0" via=":floriano005_0_0" tl="floriano005" linkIndex="0" dir="s" state="o"/>
+    <connection from="andradas010tofloriano005" to="floriano005tofloriano006" fromLane="0" toLane="0" via=":floriano005_1_0" tl="floriano005" linkIndex="1" dir="l" state="o"/>
+    <connection from="andradas011tovalandro005" to="valandro005tovalandro006" fromLane="0" toLane="0" via=":valandro005_0_0" tl="valandro005" linkIndex="0" dir="r" state="o"/>
+    <connection from="andradas011tovalandro005" to="valandro005toandradas012" fromLane="0" toLane="0" via=":valandro005_1_0" tl="valandro005" linkIndex="1" dir="s" state="o"/>
     <connection from="floriano001tofloriano002" to="floriano002tofloriano003" fromLane="0" toLane="0" via=":floriano002_0_0" dir="s" state="M"/>
-    <connection from="floriano002tofloriano003" to="floriano003tofloriano004" fromLane="0" toLane="0" via=":floriano003_2_0" tl="647407829" linkIndex="2" dir="s" state="o"/>
-    <connection from="floriano002tofloriano003" to="floriano003tosilva005" fromLane="0" toLane="1" via=":floriano003_3_0" tl="647407829" linkIndex="3" dir="l" state="o"/>
+    <connection from="floriano002tofloriano003" to="floriano003tofloriano004" fromLane="0" toLane="0" via=":floriano003_2_0" tl="floriano003" linkIndex="2" dir="s" state="o"/>
+    <connection from="floriano002tofloriano003" to="floriano003tosilva005" fromLane="0" toLane="1" via=":floriano003_3_0" tl="floriano003" linkIndex="3" dir="l" state="o"/>
     <connection from="floriano003tofloriano004" to="floriano004tofloriano005" fromLane="0" toLane="0" via=":floriano004_0_0" dir="s" state="M"/>
     <connection from="floriano003tosilva005" to="silva005toriobranco103" fromLane="0" toLane="0" via=":silva005_0_0" dir="s" state="M"/>
     <connection from="floriano003tosilva005" to="silva005toriobranco103" fromLane="1" toLane="1" via=":silva005_0_1" dir="s" state="M"/>
-    <connection from="floriano004tofloriano005" to="floriano005toandradas011" fromLane="0" toLane="0" via=":floriano005_2_0" tl="645360804" linkIndex="2" dir="r" state="o"/>
-    <connection from="floriano004tofloriano005" to="floriano005tofloriano006" fromLane="0" toLane="0" via=":floriano005_3_0" tl="645360804" linkIndex="3" dir="s" state="o"/>
+    <connection from="floriano004tofloriano005" to="floriano005toandradas011" fromLane="0" toLane="0" via=":floriano005_2_0" tl="floriano005" linkIndex="2" dir="r" state="o"/>
+    <connection from="floriano004tofloriano005" to="floriano005tofloriano006" fromLane="0" toLane="0" via=":floriano005_3_0" tl="floriano005" linkIndex="3" dir="s" state="o"/>
     <connection from="floriano005toandradas011" to="andradas011tovalandro005" fromLane="0" toLane="0" via=":andradas011_0_0" dir="s" state="M"/>
     <connection from="floriano005tofloriano006" to="floriano006tofloriano007" fromLane="0" toLane="0" via=":floriano006_0_0" dir="s" state="M"/>
     <connection from="floriano006tofloriano007" to="floriano007tofloriano008" fromLane="0" toLane="0" via=":floriano007_0_0" dir="s" state="M"/>
-    <connection from="floriano007tofloriano008" to="floriano008tofloriano009" fromLane="0" toLane="0" via=":floriano008_2_0" tl="639117530" linkIndex="2" dir="s" state="o"/>
-    <connection from="floriano007tofloriano008" to="floriano008tovenancio004" fromLane="0" toLane="0" via=":floriano008_3_0" tl="639117530" linkIndex="3" dir="l" state="o"/>
+    <connection from="floriano007tofloriano008" to="floriano008tofloriano009" fromLane="0" toLane="0" via=":floriano008_2_0" tl="floriano008" linkIndex="2" dir="s" state="o"/>
+    <connection from="floriano007tofloriano008" to="floriano008tovenancio004" fromLane="0" toLane="0" via=":floriano008_3_0" tl="floriano008" linkIndex="3" dir="l" state="o"/>
     <connection from="floriano008tovenancio004" to="venancio004tovenancio005" fromLane="0" toLane="0" via=":venancio004_0_0" dir="s" state="M"/>
     <connection from="riobranco001toriobranco002" to="riobranco002toriobranco003" fromLane="0" toLane="0" via=":riobranco002_0_0" dir="s" state="M"/>
     <connection from="riobranco001toriobranco002" to="riobranco002toriobranco003" fromLane="1" toLane="1" via=":riobranco002_0_1" dir="s" state="M"/>
@@ -1241,8 +1241,8 @@
     <connection from="silva002tovalandro006" to="valandro006tosilva003" fromLane="0" toLane="0" via=":valandro006_2_0" dir="s" state="M"/>
     <connection from="silva002tovalandro006" to="valandro006tovalandro007" fromLane="0" toLane="0" via=":valandro006_3_0" dir="l" state="M"/>
     <connection from="silva003tosilva004" to="silva004tofloriano003" fromLane="0" toLane="0" via=":silva004_0_0" dir="s" state="M"/>
-    <connection from="silva004tofloriano003" to="floriano003tofloriano004" fromLane="0" toLane="0" via=":floriano003_0_0" tl="647407829" linkIndex="0" dir="r" state="o"/>
-    <connection from="silva004tofloriano003" to="floriano003tosilva005" fromLane="0" toLane="0" via=":floriano003_1_0" tl="647407829" linkIndex="1" dir="s" state="o"/>
+    <connection from="silva004tofloriano003" to="floriano003tofloriano004" fromLane="0" toLane="0" via=":floriano003_0_0" tl="floriano003" linkIndex="0" dir="r" state="o"/>
+    <connection from="silva004tofloriano003" to="floriano003tosilva005" fromLane="0" toLane="0" via=":floriano003_1_0" tl="floriano003" linkIndex="1" dir="s" state="o"/>
     <connection from="silva005toriobranco103" to="riobranco103toriobranco104" fromLane="0" toLane="0" via=":riobranco103_0_0" tl="647407827" linkIndex="0" dir="r" state="o"/>
     <connection from="silva005toriobranco103" to="riobranco103toriobranco104" fromLane="1" toLane="1" via=":riobranco103_1_0" tl="647407827" linkIndex="1" dir="r" state="o"/>
     <connection from="silva005toriobranco103" to="riobranco103tosilva006" fromLane="1" toLane="0" via=":riobranco103_2_0" tl="647407827" linkIndex="2" dir="s" state="o"/>
@@ -1256,8 +1256,8 @@
     <connection from="valandro002tovalandro003" to="valandro003tovalandro004" fromLane="0" toLane="0" via=":valandro003_1_0" tl="valandro003" linkIndex="1" dir="s" state="o"/>
     <connection from="valandro003tovalandro004" to="valandro004tovalandro005" fromLane="0" toLane="0" via=":valandro004_0_0" dir="s" state="M"/>
     <connection from="valandro003tovenancio003" to="venancio003tofloriano008" fromLane="0" toLane="0" via=":venancio003_0_0" dir="s" state="M"/>
-    <connection from="valandro004tovalandro005" to="valandro005tovalandro006" fromLane="0" toLane="0" via=":valandro005_2_0" tl="645360789" linkIndex="2" dir="s" state="o"/>
-    <connection from="valandro004tovalandro005" to="valandro005toandradas012" fromLane="0" toLane="0" via=":valandro005_3_0" tl="645360789" linkIndex="3" dir="l" state="o"/>
+    <connection from="valandro004tovalandro005" to="valandro005tovalandro006" fromLane="0" toLane="0" via=":valandro005_2_0" tl="valandro005" linkIndex="2" dir="s" state="o"/>
+    <connection from="valandro004tovalandro005" to="valandro005toandradas012" fromLane="0" toLane="0" via=":valandro005_3_0" tl="valandro005" linkIndex="3" dir="l" state="o"/>
     <connection from="valandro005tovalandro006" to="valandro006tosilva003" fromLane="0" toLane="0" via=":valandro006_0_0" dir="r" state="m"/>
     <connection from="valandro005tovalandro006" to="valandro006tovalandro007" fromLane="0" toLane="0" via=":valandro006_1_0" dir="s" state="m"/>
     <connection from="valandro006tosilva003" to="silva003tosilva004" fromLane="0" toLane="0" via=":silva003_0_0" dir="s" state="M"/>
@@ -1265,8 +1265,8 @@
     <connection from="venancio001tovenancio002" to="venancio002tovalandro003" fromLane="0" toLane="0" via=":venancio002_0_0" dir="s" state="M"/>
     <connection from="venancio002tovalandro003" to="valandro003tovenancio003" fromLane="0" toLane="0" via=":valandro003_2_0" tl="valandro003" linkIndex="2" dir="s" state="o"/>
     <connection from="venancio002tovalandro003" to="valandro003tovalandro004" fromLane="0" toLane="0" via=":valandro003_3_0" tl="valandro003" linkIndex="3" dir="l" state="o"/>
-    <connection from="venancio003tofloriano008" to="floriano008tofloriano009" fromLane="0" toLane="0" via=":floriano008_0_0" tl="639117530" linkIndex="0" dir="r" state="o"/>
-    <connection from="venancio003tofloriano008" to="floriano008tovenancio004" fromLane="0" toLane="0" via=":floriano008_1_0" tl="639117530" linkIndex="1" dir="s" state="o"/>
+    <connection from="venancio003tofloriano008" to="floriano008tofloriano009" fromLane="0" toLane="0" via=":floriano008_0_0" tl="floriano008" linkIndex="0" dir="r" state="o"/>
+    <connection from="venancio003tofloriano008" to="floriano008tovenancio004" fromLane="0" toLane="0" via=":floriano008_1_0" tl="floriano008" linkIndex="1" dir="s" state="o"/>
     <connection from="venancio004tovenancio005" to="venancio005tovenancio006" fromLane="0" toLane="0" via=":venancio005_0_0" dir="s" state="M"/>
     <connection from="venancio005tovenancio006" to="venancio006tovenancio007" fromLane="0" toLane="0" via=":venancio006_0_0" dir="s" state="M"/>
     <connection from="venancio006tovenancio007" to="venancio007toriobranco113" fromLane="0" toLane="0" via=":venancio007_0_0" dir="s" state="M"/>

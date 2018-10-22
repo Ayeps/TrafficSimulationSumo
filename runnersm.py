@@ -17,7 +17,9 @@ from Network import Network
 from Manage import Manage
 from Detectors import Detectors
 
-flow = Flow(500,"datsm/routes.rou.xml")
+vehicle_number = 100
+
+flow = Flow(vehicle_number,"datsm/routes.rou.xml",'datsm/flowroutes.txt')
 v = Vehicle(length=4)
 r = Routes()
 
@@ -26,35 +28,28 @@ tfs = TrafficLights()
 
 r.load('datsm/rotas.txt')
 
-'''tfs.add("floriano003",["routefloriano","routesilva"])
-tfs.add("floriano005",["routefloriano","routeandradas"])
-tfs.add("floriano008",["routefloriano","routevenancio"])'''
+tfs.add("floriano003",["routefloriano","routesilva"],[0,2],["floriano01","silva01"],'lqf')
 
-tfs.add("valandro003",["routevalandro","routevenancio"])
-'''tfs.add("valandro005",["routevalandro","routeandradas"])
+tfs.add("floriano005",["routefloriano","routeandradas"],[0,2],["floriano02","andradas03"],'lqf')
 
-tfs.add("riobranco103",["routeriobranco01","routesilva"])
-tfs.add("riobranco108",["routeriobranco01","routeandradas"])
-tfs.add("riobranco113",["routeriobranco01","routevenancio"])
+tfs.add("floriano008",["routefloriano","routevenancio"],[0,2],["floriano03","venancio02"],'lqf')
 
-tfs.add("riobranco012",["routeriobranco02","routevenancio"])
-tfs.add("riobranco008",["routeriobranco02","routeandradas"])
-tfs.add("riobranco008",["routeriobranco02","routesilva"])'''
+tfs.add("valandro003",["routevalandro","routevenancio"],[0,2],["venancio01","valandro02"],'lqf')
+
+tfs.add("valandro005",["routevalandro","routeandradas"],[0,2],["andradas04","valandro01"],'lqf')
 
 mng = Manage(det,tfs,v,r)
-
-#mng.add(["venancio01","valandro02"],"valandro003",'lqf')
-
-mng.add(["il0","il1"],'valandro003','attl')
 
 def run():
     tfs.defPositions()
     step = 0
-    while True:
+    arrived = 0
+    while arrived<vehicle_number:
         mng.run(1,step)
         traci.simulationStep()
         step += 1
         mng.signal()
+        arrived+=traci.simulation.getArrivedNumber()
     traci.close()
     sys.stdout.flush()
 

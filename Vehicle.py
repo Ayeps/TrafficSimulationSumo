@@ -32,4 +32,7 @@ class Vehicle():
     
     # build the vehicle
     def build(self,id,route,depart,f):
-        print("<vehicle id=\""+str(id)+"\" type=\""+str(self.type)+"\" route=\""+str(route)+"\" depart=\""+str(depart)+"\" />",file=f)
+        if(id==0):
+            print("<vehicle id=\""+str(id)+"\" type=\""+str(self.type)+"\" route=\""+str(route)+"\" depart=\""+str(depart)+"\" color=\"1,0,0\" />",file=f)
+        else:
+            print("<vehicle id=\""+str(id)+"\" type=\""+str(self.type)+"\" route=\""+str(route)+"\" depart=\""+str(depart)+"\" />",file=f)
