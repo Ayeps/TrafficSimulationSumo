@@ -55,15 +55,10 @@ class Manage():
             self.traffic_lights.lqfflag[index]=1
         else:
             self.traffic_lights.lqfflag[index]=0
-            if(idl0==0):
-                self.signals[index]=self.traffic_lights.signal[index][1]
-            if(idl1==0):
-                self.signals[index]=self.traffic_lights.signal[index][0]
-            else:
-                if(self.signals[index]==0):
-                    self.signals[index]=2
-                elif(self.signals[index]==2):
-                    self.signals[index]=0
+            if(self.signals[index]==0):
+                self.signals[index]=2
+            elif(self.signals[index]==2):
+                self.signals[index]=0
     
     # arrival time at traffic light
     def attl(self,detector,tf,i):

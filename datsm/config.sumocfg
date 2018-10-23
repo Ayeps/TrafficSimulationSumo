@@ -2,7 +2,7 @@
     <input>
         <net-file value="netsm.net.xml"/>
         <route-files value="routes.rou.xml"/>
-        <additional-files value="loops.det.xml"/>
+        <additional-files value="loops.det.xml detecs.det.xml"/>
     </input>
     <time>
         <begin value="0"/>

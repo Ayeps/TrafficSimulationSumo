@@ -44,7 +44,7 @@ tfs.add("floriano008",["routefloriano","routevenancio"],[0,2],["floriano03","ven
 
 tfs.add("valandro003",["routevalandro","routevenancio"],[0,2],["venancio01","valandro02"],global_algorithm)
 
-tfs.add("valandro005",["routevalandro","routeandradas"],[2,0],["andradas04","valandro01"],global_algorithm)
+tfs.add("valandro005",["routevalandro","routeandradas"],[0,2],["andradas04","valandro01"],global_algorithm)
 
 mng = Manage(det,tfs,v,r)
 
@@ -65,7 +65,6 @@ def run():
     info.save("info/"+global_algorithm+".info")
     traci.close()
     sys.stdout.flush()
-    
 
 if __name__ == "__main__":
     options = includes.get_options()

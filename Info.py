@@ -12,6 +12,7 @@ class Info():
         self.steps = []
         self.vehicles = vehicles
         self.globalWaitingTimes = []
+        self.globalWaitingTimesAcumulated = []
         self.globalRunningVehicles = []
     
     def take(self,step,jump):
@@ -23,7 +24,7 @@ class Info():
 
     def save(self,filename):
         f = open(filename,'wb')
-        pickle.dump([self.steps,self.globalWaitingTimes],f)
+        pickle.dump([self.steps,self.globalWaitingTimes,self.globalWaitingTimesAcumulated],f)
         f.close()
 
     def global_running_vehicles(self):
@@ -37,3 +38,8 @@ class Info():
         if(s>0):
             t/=s
         self.globalWaitingTimes.append(t)
+        l = len(self.globalWaitingTimesAcumulated)
+        if(l>0):
+            self.globalWaitingTimesAcumulated.append(t+self.globalWaitingTimesAcumulated[l-1])
+        else:
+            self.globalWaitingTimesAcumulated.append(t)

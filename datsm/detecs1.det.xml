@@ -1,0 +1,37 @@
+<additionals>
+    <e1Detector id="andradas007_0" lane="andradas006toandradas007_0" pos="24.25" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="andradas007_1" lane="andradas006toandradas007_1" pos="24.23" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="andradas007_2" lane="andradas006toandradas007_2" pos="24.20" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="andradas009_0" lane="andradas009toriobranco108_0" pos="0.15" freq="100.00" file="detecs.out" friendlyPos="1"/>
+    <e1Detector id="andradas009_1" lane="andradas009toriobranco108_1" pos="0.16" freq="100.00" file="detecs.out" friendlyPos="1"/>
+    <e1Detector id="andradas009_2" lane="andradas009toriobranco108_2" pos="0.16" freq="100.00" file="detecs.out" friendlyPos="1"/>
+    <e1Detector id="andradas010" lane="riobranco108toandradas010_0" pos="173.00" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="andradas011" lane="floriano005toandradas011_0" pos="162.66" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="floriano002" lane="floriano001tofloriano002_0" pos="109.50" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="floriano004" lane="floriano003tofloriano004_0" pos="124.00" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="floriano007" lane="floriano006tofloriano007_0" pos="57.42" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="riobranco007_0" lane="riobranco007toriobranco008_0" pos="3.00" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="riobranco007_1" lane="riobranco007toriobranco008_1" pos="3.00" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="riobranco011_0" lane="riobranco011toriobranco012_0" pos="0.64" freq="100.00" file="detecs.out" friendlyPos="1"/>
+    <e1Detector id="riobranco011_1" lane="riobranco011toriobranco012_1" pos="0.64" freq="100.00" file="detecs.out" friendlyPos="1"/>
+    <e1Detector id="riobranco102_0" lane="riobranco101toriobranco102_0" pos="40.57" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="riobranco102_1" lane="riobranco101toriobranco102_1" pos="40.57" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="riobranco102_2" lane="riobranco101toriobranco102_2" pos="40.57" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="riobranco107_0" lane="riobranco106toriobranco107_0" pos="27.00" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="riobranco107_1" lane="riobranco106toriobranco107_1" pos="27.00" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="riobranco107_2" lane="riobranco106toriobranco107_2" pos="27.00" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="riobranco112_0" lane="riobranco111toriobranco112_0" pos="14.00" freq="100.00" file="detecs.out" friendlyPos="1"/>
+    <e1Detector id="riobranco112_1" lane="riobranco111toriobranco112_1" pos="14.00" freq="100.00" file="detecs.out" friendlyPos="1"/>
+    <e1Detector id="riobranco112_2" lane="riobranco111toriobranco112_2" pos="14.00" freq="100.00" file="detecs.out" friendlyPos="1"/>
+    <e1Detector id="silva004" lane="silva004tofloriano003_0" pos="0.77" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="silva005_0" lane="floriano003tosilva005_1" pos="170.93" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="silva005_01" lane="floriano003tosilva005_0" pos="170.85" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="silva006_0" lane="silva006toriobranco002_0" pos="0.05" freq="100.00" file="detecs.out" friendlyPos="1"/>
+    <e1Detector id="silva006_1" lane="silva006toriobranco002_1" pos="0.05" freq="100.00" file="detecs.out" friendlyPos="1"/>
+    <e1Detector id="silva006_2" lane="silva006toriobranco002_2" pos="0.05" freq="100.00" file="detecs.out" friendlyPos="1"/>
+    <e1Detector id="valandro002" lane="valandro001tovalandro002_0" pos="64.70" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="valandro004" lane="valandro003tovalandro004_0" pos="147.00" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="venancio001" lane="venancio001tovenancio002_0" pos="182.70" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="venancio003" lane="valandro003tovenancio003_0" pos="168.50" freq="100.00" file="detecs.out" friendlyPos="0"/>
+    <e1Detector id="venancio006" lane="venancio005tovenancio006_0" pos="34.69" freq="100.00" file="detecs.out" friendlyPos="0"/>
+</additionals>

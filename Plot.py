@@ -13,8 +13,9 @@ class Plot():
         for x in os.listdir("info/"):
             f = open("info/"+x,'rb')
             inf = pickle.load(f)
-            plt.plot(inf[0],inf[1],self.line_types[i], label=x.split('.')[0])
+            plt.plot(inf[0],inf[2],self.line_types[i], label=x.split('.')[0])
             i+=1
         plt.legend()
         plt.ylabel("Waiting Time")
+        plt.xlabel("Step")
         plt.show()
