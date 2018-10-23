@@ -1,7 +1,7 @@
 <additional>
 
     <e1Detector id="silva01" lane="silva004tofloriano003_0" pos="2.5" freq="30" file="detecs.out" friendlyPos="x"/>
-    <e1Detector id="silva02" lane="floriano003tosilva005_0" pos="178" freq="30" file="detecs.out" friendlyPos="x"/>
+    <e1Detector id="silva02" lane="floriano003tosilva005_0" pos="175.7" freq="30" file="detecs.out" friendlyPos="x"/>
     <e1Detector id="silva03" lane="riobranco103tosilva006_0" pos="22" freq="30" file="detecs.out" friendlyPos="x"/>
     
     <e1Detector id="venancio01" lane="venancio001tovenancio002_0" pos="182" freq="30" file="detecs.out" friendlyPos="x"/>

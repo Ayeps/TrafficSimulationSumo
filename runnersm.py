@@ -34,7 +34,7 @@ tfs = TrafficLights()
 
 r.load('datsm/rotas.txt')
 
-global_algorithm = "real"
+global_algorithm = "attl"
 
 tfs.add("floriano003",["routefloriano","routesilva"],[0,2],["floriano01","silva01"],global_algorithm)
 
@@ -44,7 +44,13 @@ tfs.add("floriano008",["routefloriano","routevenancio"],[0,2],["floriano03","ven
 
 tfs.add("valandro003",["routevalandro","routevenancio"],[0,2],["venancio01","valandro02"],global_algorithm)
 
-tfs.add("valandro005",["routevalandro","routeandradas"],[0,2],["andradas04","valandro01"],global_algorithm)
+tfs.add("valandro005",["routevalandro","routeandradas"],[2,0],["andradas04","valandro01"],global_algorithm)
+
+tfs.add("riobranco103",["routeriobranco01","routesilva"],[2,0],["riobranco01_0","riobranco01_1","riobranco01_2","silva02_0","silva02_1"],global_algorithm)
+
+tfs.add("riobranco108",["routeriobranco01","routeandradas"],[2,0],["riobranco02_0","riobranco02_1","riobranco02_2","andradas02_0","andradas02_1","andradas02_2"],global_algorithm)
+
+tfs.add("riobranco113",["routeriobranco01","routevenancio"],[2,0],["riobranco03_0","riobranco03_1","riobranco03_2","venancio03"],global_algorithm)
 
 mng = Manage(det,tfs,v,r)
 
@@ -56,7 +62,7 @@ def run():
         if(global_algorithm!="real"):
             if(global_algorithm=="attl"):
                 mng.updateVehiclesRoutes()
-            mng.run(1,step)
+            mng.run(0.01,step)
             mng.signal()
         info.take(step,5)
         traci.simulationStep()

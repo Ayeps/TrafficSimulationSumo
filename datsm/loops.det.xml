@@ -8,7 +8,7 @@
     
     <laneAreaDetector id="venancio01" lane="venancio001tovenancio002_0" pos="150" freq="30" length="35" file="loops.out" friendlyPos="x"/>
     <laneAreaDetector id="venancio02" lane="valandro003tovenancio003_0" pos="136" freq="30" length="35" file="loops.out" friendlyPos="x"/>
-    <laneAreaDetector id="venancio03" lane="venancio004tovenancio005_0" pos="67" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="venancio03" lane="venancio005tovenancio006_0" pos="10" freq="30" length="35" file="loops.out" friendlyPos="x"/>
 
     <laneAreaDetector id="andradas01_0" lane="andradas005toandradas006_0" pos="24" freq="30" length="35" file="loops.out" friendlyPos="x"/>
     <laneAreaDetector id="andradas01_1" lane="andradas005toandradas006_1" pos="24" freq="30" length="35" file="loops.out" friendlyPos="x"/>

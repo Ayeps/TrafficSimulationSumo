@@ -5,7 +5,7 @@ import os
 class Plot():
 
     def __init__(self):
-        self.line_types = ["-r","-g","-b"]
+        self.line_types = ["-r","-g","-b","-y"]
     
     def plot(self):
         infos = []
@@ -16,6 +16,7 @@ class Plot():
             plt.plot(inf[0],inf[2],self.line_types[i], label=x.split('.')[0])
             i+=1
         plt.legend()
-        plt.ylabel("Waiting Time")
+        plt.ylabel("Waiting Time (ms)")
         plt.xlabel("Step")
+        plt.suptitle('100 Vehicles', fontsize=12)
         plt.show()

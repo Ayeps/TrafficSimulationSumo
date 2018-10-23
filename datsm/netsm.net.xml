@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 19/10/2018 17:25:25 by Netedit Version 0.32.0
+<!-- generated on 23/10/2018 16:55:45 by Netedit Version 0.32.0
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
@@ -35,14 +35,14 @@
     <type id="highway.footway" priority="1" numLanes="1" speed="2.78" allow="pedestrian" oneway="1" width="2.00"/>
     <type id="highway.ford" priority="1" numLanes="1" speed="2.78" allow="army" oneway="0"/>
     <type id="highway.living_street" priority="3" numLanes="1" speed="2.78" disallow="tram rail_urban rail rail_electric ship" oneway="0"/>
-    <type id="highway.motorway" priority="13" numLanes="2" speed="11" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" oneway="1"/>
-    <type id="highway.motorway_link" priority="12" numLanes="1" speed="11" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" oneway="1"/>
+    <type id="highway.motorway" priority="13" numLanes="2" speed="11.00" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" oneway="1"/>
+    <type id="highway.motorway_link" priority="12" numLanes="1" speed="11.00" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" oneway="1"/>
     <type id="highway.path" priority="1" numLanes="1" speed="2.78" allow="bicycle pedestrian" oneway="1" width="2.00"/>
     <type id="highway.pedestrian" priority="1" numLanes="1" speed="2.78" allow="pedestrian" oneway="1" width="2.00"/>
     <type id="highway.primary" priority="9" numLanes="2" speed="27.78" disallow="tram rail_urban rail rail_electric ship" oneway="0"/>
     <type id="highway.primary_link" priority="8" numLanes="1" speed="22.22" disallow="tram rail_urban rail rail_electric ship" oneway="0"/>
     <type id="highway.raceway" priority="14" numLanes="2" speed="83.33" allow="vip" oneway="0"/>
-    <type id="highway.residential" priority="4" numLanes="1" speed="11" disallow="tram rail_urban rail rail_electric ship" oneway="0"/>
+    <type id="highway.residential" priority="4" numLanes="1" speed="11.00" disallow="tram rail_urban rail rail_electric ship" oneway="0"/>
     <type id="highway.secondary" priority="7" numLanes="2" speed="27.78" disallow="tram rail_urban rail rail_electric ship" oneway="0"/>
     <type id="highway.secondary_link" priority="6" numLanes="1" speed="22.22" disallow="tram rail_urban rail rail_electric ship" oneway="0"/>
     <type id="highway.service" priority="2" numLanes="1" speed="5.56" allow="delivery bicycle pedestrian" oneway="0"/>
@@ -50,7 +50,7 @@
     <type id="highway.stairs" priority="1" numLanes="1" speed="1.39" allow="pedestrian" oneway="1" width="2.00"/>
     <type id="highway.step" priority="1" numLanes="1" speed="1.39" allow="pedestrian" oneway="1" width="2.00"/>
     <type id="highway.steps" priority="1" numLanes="1" speed="1.39" allow="pedestrian" oneway="1" width="2.00"/>
-    <type id="highway.tertiary" priority="6" numLanes="1" speed="11" disallow="tram rail_urban rail rail_electric ship" oneway="0"/>
+    <type id="highway.tertiary" priority="6" numLanes="1" speed="11.00" disallow="tram rail_urban rail rail_electric ship" oneway="0"/>
     <type id="highway.tertiary_link" priority="5" numLanes="1" speed="22.22" disallow="tram rail_urban rail rail_electric ship" oneway="0"/>
     <type id="highway.track" priority="1" numLanes="1" speed="5.56" disallow="tram rail_urban rail rail_electric ship" oneway="0"/>
     <type id="highway.trunk" priority="11" numLanes="2" speed="27.78" disallow="tram rail_urban rail rail_electric bicycle pedestrian ship" oneway="0"/>
@@ -751,7 +751,7 @@
         <lane id="venancio010tovenancio011_1" index="1" disallow="tram rail_urban rail rail_electric ship" speed="22.22" length="151.42" shape="967.79,231.93 1025.92,246.69 1114.54,269.22"/>
     </edge>
 
-    <tlLogic id="639117529" type="static" programID="0" offset="0">
+    <tlLogic id="riobranco113" type="static" programID="0" offset="0">
         <phase duration="27" state="GGrrG"/>
         <phase duration="5" state="yyrry"/>
         <phase duration="42" state="rrGGG"/>
@@ -763,7 +763,7 @@
         <phase duration="45" state="rrrrGGGG"/>
         <phase duration="5" state="rrrryyyy"/>
     </tlLogic>
-    <tlLogic id="645360803" type="static" programID="0" offset="0">
+    <tlLogic id="riobranco108" type="static" programID="0" offset="0">
         <phase duration="45" state="GGGrrrr"/>
         <phase duration="5" state="yyyrrrr"/>
         <phase duration="20" state="rrrGGGG"/>
@@ -775,7 +775,7 @@
         <phase duration="35" state="rrrGGG"/>
         <phase duration="5" state="rrryyy"/>
     </tlLogic>
-    <tlLogic id="647407827" type="static" programID="0" offset="0">
+    <tlLogic id="riobranco103" type="static" programID="0" offset="0">
         <phase duration="33" state="GGGrrrGG"/>
         <phase duration="5" state="yyyrrryy"/>
         <phase duration="16" state="rrrGGGGG"/>
@@ -1139,9 +1139,9 @@
     <connection from="andradas008toandradas009" to="andradas009toriobranco108" fromLane="0" toLane="0" via=":andradas009_0_0" dir="s" state="M"/>
     <connection from="andradas008toandradas009" to="andradas009toriobranco108" fromLane="0" toLane="1" via=":andradas009_0_1" dir="s" state="M"/>
     <connection from="andradas008toandradas009" to="andradas009toriobranco108" fromLane="0" toLane="2" via=":andradas009_0_2" dir="s" state="M"/>
-    <connection from="andradas009toriobranco108" to="riobranco108toandradas010" fromLane="0" toLane="0" via=":riobranco108_0_0" tl="645360803" linkIndex="0" dir="s" state="o"/>
-    <connection from="andradas009toriobranco108" to="riobranco108toriobranco109" fromLane="1" toLane="1" via=":riobranco108_1_0" tl="645360803" linkIndex="1" dir="l" state="o"/>
-    <connection from="andradas009toriobranco108" to="riobranco108toriobranco109" fromLane="2" toLane="2" via=":riobranco108_2_0" tl="645360803" linkIndex="2" dir="l" state="o"/>
+    <connection from="andradas009toriobranco108" to="riobranco108toandradas010" fromLane="0" toLane="0" via=":riobranco108_0_0" tl="riobranco108" linkIndex="0" dir="s" state="o"/>
+    <connection from="andradas009toriobranco108" to="riobranco108toriobranco109" fromLane="1" toLane="1" via=":riobranco108_1_0" tl="riobranco108" linkIndex="1" dir="l" state="o"/>
+    <connection from="andradas009toriobranco108" to="riobranco108toriobranco109" fromLane="2" toLane="2" via=":riobranco108_2_0" tl="riobranco108" linkIndex="2" dir="l" state="o"/>
     <connection from="andradas010tofloriano005" to="floriano005toandradas011" fromLane="0" toLane="0" via=":floriano005_0_0" tl="floriano005" linkIndex="0" dir="s" state="o"/>
     <connection from="andradas010tofloriano005" to="floriano005tofloriano006" fromLane="0" toLane="0" via=":floriano005_1_0" tl="floriano005" linkIndex="1" dir="l" state="o"/>
     <connection from="andradas011tovalandro005" to="valandro005tovalandro006" fromLane="0" toLane="0" via=":valandro005_0_0" tl="valandro005" linkIndex="0" dir="r" state="o"/>
@@ -1193,11 +1193,11 @@
     <connection from="riobranco101toriobranco102" to="riobranco102toriobranco103" fromLane="0" toLane="0" via=":riobranco102_0_0" dir="s" state="M"/>
     <connection from="riobranco101toriobranco102" to="riobranco102toriobranco103" fromLane="1" toLane="1" via=":riobranco102_0_1" dir="s" state="M"/>
     <connection from="riobranco101toriobranco102" to="riobranco102toriobranco103" fromLane="2" toLane="2" via=":riobranco102_0_2" dir="s" state="M"/>
-    <connection from="riobranco102toriobranco103" to="riobranco103toriobranco104" fromLane="0" toLane="0" via=":riobranco103_3_0" tl="647407827" linkIndex="3" dir="s" state="o"/>
-    <connection from="riobranco102toriobranco103" to="riobranco103toriobranco104" fromLane="1" toLane="1" via=":riobranco103_3_1" tl="647407827" linkIndex="4" dir="s" state="o"/>
-    <connection from="riobranco102toriobranco103" to="riobranco103toriobranco104" fromLane="2" toLane="2" via=":riobranco103_3_2" tl="647407827" linkIndex="5" dir="s" state="o"/>
-    <connection from="riobranco102toriobranco103" to="riobranco103tosilva006" fromLane="2" toLane="1" via=":riobranco103_6_0" tl="647407827" linkIndex="6" dir="l" state="o"/>
-    <connection from="riobranco102toriobranco103" to="riobranco103tosilva006" fromLane="2" toLane="2" via=":riobranco103_7_0" tl="647407827" linkIndex="7" dir="l" state="o"/>
+    <connection from="riobranco102toriobranco103" to="riobranco103toriobranco104" fromLane="0" toLane="0" via=":riobranco103_3_0" tl="riobranco103" linkIndex="3" dir="s" state="o"/>
+    <connection from="riobranco102toriobranco103" to="riobranco103toriobranco104" fromLane="1" toLane="1" via=":riobranco103_3_1" tl="riobranco103" linkIndex="4" dir="s" state="o"/>
+    <connection from="riobranco102toriobranco103" to="riobranco103toriobranco104" fromLane="2" toLane="2" via=":riobranco103_3_2" tl="riobranco103" linkIndex="5" dir="s" state="o"/>
+    <connection from="riobranco102toriobranco103" to="riobranco103tosilva006" fromLane="2" toLane="1" via=":riobranco103_6_0" tl="riobranco103" linkIndex="6" dir="l" state="o"/>
+    <connection from="riobranco102toriobranco103" to="riobranco103tosilva006" fromLane="2" toLane="2" via=":riobranco103_7_0" tl="riobranco103" linkIndex="7" dir="l" state="o"/>
     <connection from="riobranco103toriobranco104" to="riobranco104toriobranco105" fromLane="0" toLane="0" via=":riobranco104_0_0" dir="s" state="M"/>
     <connection from="riobranco103toriobranco104" to="riobranco104toriobranco105" fromLane="1" toLane="1" via=":riobranco104_0_1" dir="s" state="M"/>
     <connection from="riobranco103toriobranco104" to="riobranco104toriobranco105" fromLane="2" toLane="2" via=":riobranco104_0_2" dir="s" state="M"/>
@@ -1213,10 +1213,10 @@
     <connection from="riobranco106toriobranco107" to="riobranco107toriobranco108" fromLane="0" toLane="0" via=":riobranco107_0_0" dir="s" state="M"/>
     <connection from="riobranco106toriobranco107" to="riobranco107toriobranco108" fromLane="1" toLane="1" via=":riobranco107_0_1" dir="s" state="M"/>
     <connection from="riobranco106toriobranco107" to="riobranco107toriobranco108" fromLane="2" toLane="2" via=":riobranco107_0_2" dir="s" state="M"/>
-    <connection from="riobranco107toriobranco108" to="riobranco108toandradas010" fromLane="0" toLane="0" via=":riobranco108_3_0" tl="645360803" linkIndex="3" dir="r" state="o"/>
-    <connection from="riobranco107toriobranco108" to="riobranco108toriobranco109" fromLane="0" toLane="0" via=":riobranco108_4_0" tl="645360803" linkIndex="4" dir="s" state="o"/>
-    <connection from="riobranco107toriobranco108" to="riobranco108toriobranco109" fromLane="1" toLane="1" via=":riobranco108_4_1" tl="645360803" linkIndex="5" dir="s" state="o"/>
-    <connection from="riobranco107toriobranco108" to="riobranco108toriobranco109" fromLane="2" toLane="2" via=":riobranco108_4_2" tl="645360803" linkIndex="6" dir="s" state="o"/>
+    <connection from="riobranco107toriobranco108" to="riobranco108toandradas010" fromLane="0" toLane="0" via=":riobranco108_3_0" tl="riobranco108" linkIndex="3" dir="r" state="o"/>
+    <connection from="riobranco107toriobranco108" to="riobranco108toriobranco109" fromLane="0" toLane="0" via=":riobranco108_4_0" tl="riobranco108" linkIndex="4" dir="s" state="o"/>
+    <connection from="riobranco107toriobranco108" to="riobranco108toriobranco109" fromLane="1" toLane="1" via=":riobranco108_4_1" tl="riobranco108" linkIndex="5" dir="s" state="o"/>
+    <connection from="riobranco107toriobranco108" to="riobranco108toriobranco109" fromLane="2" toLane="2" via=":riobranco108_4_2" tl="riobranco108" linkIndex="6" dir="s" state="o"/>
     <connection from="riobranco108toandradas010" to="andradas010tofloriano005" fromLane="0" toLane="0" via=":andradas010_0_0" dir="s" state="M"/>
     <connection from="riobranco108toriobranco109" to="riobranco109toriobranco110" fromLane="0" toLane="0" via=":riobranco109_0_0" dir="s" state="M"/>
     <connection from="riobranco108toriobranco109" to="riobranco109toriobranco110" fromLane="1" toLane="1" via=":riobranco109_0_1" dir="s" state="M"/>
@@ -1232,9 +1232,9 @@
     <connection from="riobranco111toriobranco112" to="riobranco112toriobranco113" fromLane="0" toLane="0" via=":riobranco112_0_0" dir="s" state="M"/>
     <connection from="riobranco111toriobranco112" to="riobranco112toriobranco113" fromLane="1" toLane="1" via=":riobranco112_0_1" dir="s" state="M"/>
     <connection from="riobranco111toriobranco112" to="riobranco112toriobranco113" fromLane="2" toLane="2" via=":riobranco112_0_2" dir="s" state="M"/>
-    <connection from="riobranco112toriobranco113" to="riobranco113toriobranco114" fromLane="0" toLane="0" via=":riobranco113_2_0" tl="639117529" linkIndex="2" dir="s" state="o"/>
-    <connection from="riobranco112toriobranco113" to="riobranco113toriobranco114" fromLane="1" toLane="1" via=":riobranco113_2_1" tl="639117529" linkIndex="3" dir="s" state="o"/>
-    <connection from="riobranco112toriobranco113" to="riobranco113tovenancio008" fromLane="2" toLane="1" via=":riobranco113_4_0" tl="639117529" linkIndex="4" dir="l" state="o"/>
+    <connection from="riobranco112toriobranco113" to="riobranco113toriobranco114" fromLane="0" toLane="0" via=":riobranco113_2_0" tl="riobranco113" linkIndex="2" dir="s" state="o"/>
+    <connection from="riobranco112toriobranco113" to="riobranco113toriobranco114" fromLane="1" toLane="1" via=":riobranco113_2_1" tl="riobranco113" linkIndex="3" dir="s" state="o"/>
+    <connection from="riobranco112toriobranco113" to="riobranco113tovenancio008" fromLane="2" toLane="1" via=":riobranco113_4_0" tl="riobranco113" linkIndex="4" dir="l" state="o"/>
     <connection from="riobranco113tovenancio008" to="venancio008toriobranco001" fromLane="0" toLane="0" via=":venancio008_0_0" dir="s" state="M"/>
     <connection from="riobranco113tovenancio008" to="venancio008toriobranco001" fromLane="1" toLane="1" via=":venancio008_0_1" dir="s" state="M"/>
     <connection from="silva001tosilva002" to="silva002tovalandro006" fromLane="0" toLane="0" via=":silva002_0_0" dir="s" state="M"/>
@@ -1243,9 +1243,9 @@
     <connection from="silva003tosilva004" to="silva004tofloriano003" fromLane="0" toLane="0" via=":silva004_0_0" dir="s" state="M"/>
     <connection from="silva004tofloriano003" to="floriano003tofloriano004" fromLane="0" toLane="0" via=":floriano003_0_0" tl="floriano003" linkIndex="0" dir="r" state="o"/>
     <connection from="silva004tofloriano003" to="floriano003tosilva005" fromLane="0" toLane="0" via=":floriano003_1_0" tl="floriano003" linkIndex="1" dir="s" state="o"/>
-    <connection from="silva005toriobranco103" to="riobranco103toriobranco104" fromLane="0" toLane="0" via=":riobranco103_0_0" tl="647407827" linkIndex="0" dir="r" state="o"/>
-    <connection from="silva005toriobranco103" to="riobranco103toriobranco104" fromLane="1" toLane="1" via=":riobranco103_1_0" tl="647407827" linkIndex="1" dir="r" state="o"/>
-    <connection from="silva005toriobranco103" to="riobranco103tosilva006" fromLane="1" toLane="0" via=":riobranco103_2_0" tl="647407827" linkIndex="2" dir="s" state="o"/>
+    <connection from="silva005toriobranco103" to="riobranco103toriobranco104" fromLane="0" toLane="0" via=":riobranco103_0_0" tl="riobranco103" linkIndex="0" dir="r" state="o"/>
+    <connection from="silva005toriobranco103" to="riobranco103toriobranco104" fromLane="1" toLane="1" via=":riobranco103_1_0" tl="riobranco103" linkIndex="1" dir="r" state="o"/>
+    <connection from="silva005toriobranco103" to="riobranco103tosilva006" fromLane="1" toLane="0" via=":riobranco103_2_0" tl="riobranco103" linkIndex="2" dir="s" state="o"/>
     <connection from="silva006toriobranco002" to="riobranco002tosilva007" fromLane="0" toLane="0" via=":riobranco012_3_0" tl="647407824" linkIndex="3" dir="s" state="o"/>
     <connection from="silva006toriobranco002" to="riobranco002tosilva007" fromLane="1" toLane="1" via=":riobranco012_3_1" tl="647407824" linkIndex="4" dir="s" state="o"/>
     <connection from="silva006toriobranco002" to="riobranco012toriobranco013" fromLane="2" toLane="1" via=":riobranco012_5_0" tl="647407824" linkIndex="5" dir="l" state="o"/>
@@ -1270,8 +1270,8 @@
     <connection from="venancio004tovenancio005" to="venancio005tovenancio006" fromLane="0" toLane="0" via=":venancio005_0_0" dir="s" state="M"/>
     <connection from="venancio005tovenancio006" to="venancio006tovenancio007" fromLane="0" toLane="0" via=":venancio006_0_0" dir="s" state="M"/>
     <connection from="venancio006tovenancio007" to="venancio007toriobranco113" fromLane="0" toLane="0" via=":venancio007_0_0" dir="s" state="M"/>
-    <connection from="venancio007toriobranco113" to="riobranco113toriobranco114" fromLane="0" toLane="0" via=":riobranco113_0_0" tl="639117529" linkIndex="0" dir="r" state="o"/>
-    <connection from="venancio007toriobranco113" to="riobranco113tovenancio008" fromLane="0" toLane="0" via=":riobranco113_1_0" tl="639117529" linkIndex="1" dir="s" state="o"/>
+    <connection from="venancio007toriobranco113" to="riobranco113toriobranco114" fromLane="0" toLane="0" via=":riobranco113_0_0" tl="riobranco113" linkIndex="0" dir="r" state="o"/>
+    <connection from="venancio007toriobranco113" to="riobranco113tovenancio008" fromLane="0" toLane="0" via=":riobranco113_1_0" tl="riobranco113" linkIndex="1" dir="s" state="o"/>
     <connection from="venancio008toriobranco001" to="riobranco001tovenancio009" fromLane="0" toLane="0" via=":riobranco001_0_0" dir="s" state="M"/>
     <connection from="venancio008toriobranco001" to="riobranco001tovenancio009" fromLane="1" toLane="1" via=":riobranco001_0_1" dir="s" state="M"/>
     <connection from="venancio008toriobranco001" to="riobranco001toriobranco002" fromLane="1" toLane="0" via=":riobranco001_2_0" dir="l" state="M"/>

@@ -39,13 +39,13 @@ class Manage():
         idl0 = self.detectors.get(detector[0])
         idl1 = self.detectors.get(detector[1])
 
-        lr0 = traci.lanearea.getLastStepVehicleIDs(detector[0])
+        '''lr0 = traci.lanearea.getLastStepVehicleIDs(detector[0])
         lr1 = traci.lanearea.getLastStepVehicleIDs(detector[1])
 
         if(len(lr0)>0):
             r0 = self.vehicles.route(lr0[0])
         if(len(lr1)>0):
-            r1 = self.vehicles.route(lr1[0])
+            r1 = self.vehicles.route(lr1[0])'''
 
         if(self.traffic_lights.lqfflag[index]==0):
             if(idl0>idl1):
@@ -65,12 +65,13 @@ class Manage():
         index = self.traffic_lights.index(tf)
         order = self.traffic_lights.order[index]
         if(len(order)>0):
-            ids0 = traci.lanearea.getLastStepVehicleIDs(detector[0])
-            ids1 = traci.lanearea.getLastStepVehicleIDs(detector[1])
+            ids = []
+            for x in detector:
+                ids.extend(traci.lanearea.getLastStepVehicleIDs(x))
             for x in order:
-                if(x[3]==1 and x[0] not in ids0 and x[0] not in ids1):
+                if(x[3]==1 and x[0] not in ids):
                     x[3]=2
-                elif(x[3]==0 and (x[0] in ids0 or x[0] in ids1)):
+                elif(x[3]==0 and (x[0] in ids)):
                     x[3] = 1
             order2 = order.copy()
             for x in order2:
