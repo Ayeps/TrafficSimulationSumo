@@ -1,20 +1,49 @@
 <additional>
-    <laneAreaDetector id="silva01" lane="silva003tosilva004_0" pos="40.69" freq="30" length="35" file="loops.out" friendlyPos="x"/>
-    <laneAreaDetector id="silva02" lane="floriano003tosilva005_0" pos="143" freq="30" length="35" file="loops.out" friendlyPos="x"/>
-    <laneAreaDetector id="silva03" lane="riobranco103tosilva006_0" pos="2" freq="30" length="20" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="silva01" lane="silva003tosilva004_0" pos="48" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="silva02_0" lane="floriano003tosilva005_0" pos="143" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="silva02_1" lane="floriano003tosilva005_1" pos="143" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="silva03_0" lane="riobranco103tosilva006_0" pos="2" freq="30" length="17" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="silva03_1" lane="riobranco103tosilva006_1" pos="2" freq="30" length="17" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="silva03_2" lane="riobranco103tosilva006_2" pos="2" freq="30" length="17" file="loops.out" friendlyPos="x"/>
     
-    <laneAreaDetector id="venancio01" lane="venancio001tovenancio002_0" pos="147" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="venancio01" lane="venancio001tovenancio002_0" pos="150" freq="30" length="35" file="loops.out" friendlyPos="x"/>
     <laneAreaDetector id="venancio02" lane="valandro003tovenancio003_0" pos="136" freq="30" length="35" file="loops.out" friendlyPos="x"/>
     <laneAreaDetector id="venancio03" lane="venancio004tovenancio005_0" pos="67" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+
+    <laneAreaDetector id="andradas01_0" lane="andradas005toandradas006_0" pos="24" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="andradas01_1" lane="andradas005toandradas006_1" pos="24" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="andradas01_2" lane="andradas005toandradas006_2" pos="24" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+
+    <laneAreaDetector id="andradas02_0" lane="riobranco006toandradas008_0" pos="0" freq="30" length="20" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="andradas02_1" lane="riobranco006toandradas008_1" pos="0" freq="30" length="20" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="andradas02_2" lane="riobranco006toandradas008_2" pos="0" freq="30" length="20" file="loops.out" friendlyPos="x"/>
 
     <laneAreaDetector id="andradas03" lane="riobranco108toandradas010_0" pos="120" freq="30" length="55" file="loops.out" friendlyPos="x"/>
     <laneAreaDetector id="andradas04" lane="floriano005toandradas011_0" pos="136" freq="30" length="35" file="loops.out" friendlyPos="x"/>
 
     <laneAreaDetector id="valandro01" lane="valandro003tovalandro004_0" pos="115" freq="30" length="35" file="loops.out" friendlyPos="x"/>
-    <laneAreaDetector id="valandro02" lane="valandro001tovalandro002_0" pos="29" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="valandro02" lane="valandro001tovalandro002_0" pos="32" freq="30" length="35" file="loops.out" friendlyPos="x"/>
 
     <laneAreaDetector id="floriano01" lane="floriano001tofloriano002_0" pos="77" freq="30" length="35" file="loops.out" friendlyPos="x"/>
     <laneAreaDetector id="floriano02" lane="floriano003tofloriano004_0" pos="103" freq="30" length="35" file="loops.out" friendlyPos="x"/>
-    <laneAreaDetector id="floriano03" lane="floriano006tofloriano007_0" pos="22" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="floriano03" lane="floriano006tofloriano007_0" pos="26" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+
+    <laneAreaDetector id="riobranco01_0" lane="riobranco101toriobranco102_0" pos="9" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="riobranco01_1" lane="riobranco101toriobranco102_1" pos="9" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="riobranco01_2" lane="riobranco101toriobranco102_2" pos="9" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    
+    <laneAreaDetector id="riobranco02_0" lane="riobranco105toriobranco106_0" pos="11" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="riobranco02_1" lane="riobranco105toriobranco106_1" pos="11" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="riobranco02_2" lane="riobranco105toriobranco106_2" pos="11" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+
+    <laneAreaDetector id="riobranco03_0" lane="riobranco111toriobranco112_0" pos="0" freq="30" length="17" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="riobranco03_1" lane="riobranco111toriobranco112_1" pos="0" freq="30" length="17" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="riobranco03_2" lane="riobranco111toriobranco112_2" pos="0" freq="30" length="17" file="loops.out" friendlyPos="x"/>
+
+    <laneAreaDetector id="riobranco10_0" lane="riobranco005toriobranco006_0" pos="29" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="riobranco10_1" lane="riobranco005toriobranco006_1" pos="29" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+
+    <laneAreaDetector id="riobranco11_0" lane="riobranco009toriobranco010_0" pos="29" freq="30" length="35" file="loops.out" friendlyPos="x"/>
+    <laneAreaDetector id="riobranco11_1" lane="riobranco009toriobranco010_1" pos="29" freq="30" length="35" file="loops.out" friendlyPos="x"/>
 
 </additional>

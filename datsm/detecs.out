@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 22/10/2018 17:42:46 by SUMO gui Version 0.32.0
+<!-- generated on 23/10/2018 14:02:47 by SUMO gui Version 0.32.0
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
@@ -17,7 +17,7 @@
     </time>
 
     <traci_server>
-        <remote-port value="53435"/>
+        <remote-port value="50393"/>
     </traci_server>
 
     <gui_only>
@@ -28,4 +28,56 @@
 -->
 
 <detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
+    <interval begin="0.00" end="30.00" id="silva01" nVehContrib="0" flow="0.00" occupancy="0.25" speed="-1.00" length="-1.00" nVehEntered="1"/>
+    <interval begin="0.00" end="30.00" id="silva02" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="30.00" id="silva03" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="30.00" id="venancio01" nVehContrib="3" flow="360.00" occupancy="2.61" speed="15.34" length="4.00" nVehEntered="3"/>
+    <interval begin="0.00" end="30.00" id="venancio02" nVehContrib="1" flow="120.00" occupancy="0.60" speed="22.22" length="4.00" nVehEntered="1"/>
+    <interval begin="0.00" end="30.00" id="venancio03" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="30.00" id="andradas03" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="30.00" id="andradas04" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="30.00" id="valandro01" nVehContrib="1" flow="120.00" occupancy="4.45" speed="3.00" length="4.00" nVehEntered="1"/>
+    <interval begin="0.00" end="30.00" id="valandro02" nVehContrib="5" flow="600.00" occupancy="9.62" speed="6.93" length="4.00" nVehEntered="5"/>
+    <interval begin="0.00" end="30.00" id="floriano01" nVehContrib="4" flow="480.00" occupancy="14.76" speed="4.08" length="4.00" nVehEntered="4"/>
+    <interval begin="0.00" end="30.00" id="floriano02" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="30.00" id="floriano03" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="30.00" end="60.00" id="silva01" nVehContrib="5" flow="600.00" occupancy="60.97" speed="1.29" length="4.00" nVehEntered="6"/>
+    <interval begin="30.00" end="60.00" id="silva02" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="30.00" end="60.00" id="silva03" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="30.00" end="60.00" id="venancio01" nVehContrib="8" flow="960.00" occupancy="6.95" speed="15.34" length="4.00" nVehEntered="8"/>
+    <interval begin="30.00" end="60.00" id="venancio02" nVehContrib="7" flow="840.00" occupancy="18.03" speed="13.35" length="4.00" nVehEntered="8"/>
+    <interval begin="30.00" end="60.00" id="venancio03" nVehContrib="5" flow="600.00" occupancy="3.99" speed="17.13" length="4.00" nVehEntered="5"/>
+    <interval begin="30.00" end="60.00" id="andradas03" nVehContrib="2" flow="240.00" occupancy="6.94" speed="5.66" length="4.00" nVehEntered="2"/>
+    <interval begin="30.00" end="60.00" id="andradas04" nVehContrib="1" flow="120.00" occupancy="7.23" speed="1.84" length="4.00" nVehEntered="3"/>
+    <interval begin="30.00" end="60.00" id="valandro01" nVehContrib="7" flow="840.00" occupancy="29.98" speed="4.71" length="4.00" nVehEntered="7"/>
+    <interval begin="30.00" end="60.00" id="valandro02" nVehContrib="7" flow="840.00" occupancy="13.47" speed="6.93" length="4.00" nVehEntered="7"/>
+    <interval begin="30.00" end="60.00" id="floriano01" nVehContrib="6" flow="720.00" occupancy="45.87" speed="2.42" length="4.00" nVehEntered="6"/>
+    <interval begin="30.00" end="60.00" id="floriano02" nVehContrib="5" flow="600.00" occupancy="28.32" speed="4.78" length="4.00" nVehEntered="8"/>
+    <interval begin="30.00" end="60.00" id="floriano03" nVehContrib="2" flow="240.00" occupancy="2.91" speed="9.18" length="4.00" nVehEntered="2"/>
+    <interval begin="60.00" end="90.00" id="silva01" nVehContrib="6" flow="720.00" occupancy="56.84" speed="1.37" length="4.00" nVehEntered="5"/>
+    <interval begin="60.00" end="90.00" id="silva02" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="60.00" end="90.00" id="silva03" nVehContrib="3" flow="360.00" occupancy="54.39" speed="3.88" length="4.00" nVehEntered="3"/>
+    <interval begin="60.00" end="90.00" id="venancio01" nVehContrib="7" flow="840.00" occupancy="6.08" speed="15.34" length="4.00" nVehEntered="7"/>
+    <interval begin="60.00" end="90.00" id="venancio02" nVehContrib="7" flow="840.00" occupancy="22.73" speed="5.81" length="4.00" nVehEntered="8"/>
+    <interval begin="60.00" end="90.00" id="venancio03" nVehContrib="3" flow="360.00" occupancy="9.44" speed="6.07" length="4.00" nVehEntered="3"/>
+    <interval begin="60.00" end="90.00" id="andradas03" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="60.00" end="90.00" id="andradas04" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="60.00" end="90.00" id="valandro01" nVehContrib="8" flow="960.00" occupancy="27.23" speed="4.32" length="4.00" nVehEntered="8"/>
+    <interval begin="60.00" end="90.00" id="valandro02" nVehContrib="8" flow="960.00" occupancy="15.40" speed="6.93" length="4.00" nVehEntered="8"/>
+    <interval begin="60.00" end="90.00" id="floriano01" nVehContrib="5" flow="600.00" occupancy="43.50" speed="2.06" length="4.00" nVehEntered="6"/>
+    <interval begin="60.00" end="90.00" id="floriano02" nVehContrib="6" flow="720.00" occupancy="7.23" speed="10.32" length="4.00" nVehEntered="5"/>
+    <interval begin="60.00" end="90.00" id="floriano03" nVehContrib="7" flow="840.00" occupancy="30.20" speed="5.67" length="4.00" nVehEntered="9"/>
+    <interval begin="90.00" end="112.00" id="silva01" nVehContrib="4" flow="654.55" occupancy="54.91" speed="1.34" length="4.00" nVehEntered="4"/>
+    <interval begin="90.00" end="112.00" id="silva02" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="90.00" end="112.00" id="silva03" nVehContrib="3" flow="490.91" occupancy="5.67" speed="9.64" length="4.00" nVehEntered="3"/>
+    <interval begin="90.00" end="112.00" id="venancio01" nVehContrib="2" flow="327.27" occupancy="2.37" speed="15.34" length="4.00" nVehEntered="2"/>
+    <interval begin="90.00" end="112.00" id="venancio02" nVehContrib="4" flow="654.55" occupancy="38.63" speed="1.89" length="4.00" nVehEntered="4"/>
+    <interval begin="90.00" end="112.00" id="venancio03" nVehContrib="8" flow="1309.09" occupancy="18.41" speed="9.66" length="4.00" nVehEntered="8"/>
+    <interval begin="90.00" end="112.00" id="andradas03" nVehContrib="3" flow="490.91" occupancy="24.71" speed="11.14" length="4.00" nVehEntered="4"/>
+    <interval begin="90.00" end="112.00" id="andradas04" nVehContrib="1" flow="163.64" occupancy="1.00" speed="18.22" length="4.00" nVehEntered="1"/>
+    <interval begin="90.00" end="112.00" id="valandro01" nVehContrib="4" flow="654.55" occupancy="18.98" speed="4.16" length="4.00" nVehEntered="4"/>
+    <interval begin="90.00" end="112.00" id="valandro02" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="90.00" end="112.00" id="floriano01" nVehContrib="4" flow="654.55" occupancy="51.18" speed="2.15" length="4.00" nVehEntered="4"/>
+    <interval begin="90.00" end="112.00" id="floriano02" nVehContrib="4" flow="654.55" occupancy="19.44" speed="6.00" length="4.00" nVehEntered="5"/>
+    <interval begin="90.00" end="112.00" id="floriano03" nVehContrib="4" flow="654.55" occupancy="37.05" speed="1.77" length="4.00" nVehEntered="3"/>
 </detector>

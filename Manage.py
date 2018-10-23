@@ -24,10 +24,10 @@ class Manage():
         index = self.traffic_lights.index(tf)
         cars = traci.inductionloop.getLastStepVehicleNumber(detector[0])
         cars1 = traci.inductionloop.getLastStepVehicleNumber(detector[1])
-        if cars > cars1:
+        if cars1 > cars:
             if self.signals[index] == 0:
                 self.signals[index] = 2
-        elif cars1 > cars:
+        if cars > cars1:
             if self.signals[index] == 2:
                 self.signals[index] = 0
     
@@ -55,12 +55,15 @@ class Manage():
             self.traffic_lights.lqfflag[index]=1
         else:
             self.traffic_lights.lqfflag[index]=0
-            if(self.signals[index]==0):
-                self.signals[index]=2
-            elif(self.signals[index]==2):
-                self.signals[index]=0
-            #elif(idl0<idl1):
-            #    self.signals[index]=0
+            if(idl0==0):
+                self.signals[index]=self.traffic_lights.signal[index][1]
+            if(idl1==0):
+                self.signals[index]=self.traffic_lights.signal[index][0]
+            else:
+                if(self.signals[index]==0):
+                    self.signals[index]=2
+                elif(self.signals[index]==2):
+                    self.signals[index]=0
     
     # arrival time at traffic light
     def attl(self,detector,tf,i):
@@ -162,7 +165,6 @@ class Manage():
                     self.zip(detector,tf,i)
                 elif(alg=='attl'):
                     self.attl(detector,tf,i)
-                    pass
                 i+=1
             self.time_e = time.time()
             self.step = steps
