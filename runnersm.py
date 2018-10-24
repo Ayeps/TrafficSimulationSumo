@@ -1,5 +1,5 @@
 # lqf: delay = 1
-# attl: delay = 0.01
+# ffat: delay = 0.01
 
 from __future__ import absolute_import
 from __future__ import print_function
@@ -34,7 +34,7 @@ tfs = TrafficLights()
 
 r.load('datsm/rotas.txt')
 
-global_algorithm = "attl"
+global_algorithm = "lqf"
 
 tfs.add("floriano003",["routefloriano","routesilva"],[0,2],["floriano01","silva01"],global_algorithm)
 
@@ -60,14 +60,15 @@ def run():
     arrived = 0
     while arrived<vehicle_number:
         if(global_algorithm!="real"):
-            if(global_algorithm=="attl"):
+            if(global_algorithm=="ffat"):
                 mng.updateVehiclesRoutes()
-            mng.run(0.01,step)
+            mng.run(1,step)
             mng.signal()
         info.take(step,5)
         traci.simulationStep()
         step += 1
         arrived+=traci.simulation.getArrivedNumber()
+    print(step)
     info.save("info/"+global_algorithm+".info")
     traci.close()
     sys.stdout.flush()

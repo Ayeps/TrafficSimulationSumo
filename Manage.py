@@ -36,8 +36,14 @@ class Manage():
         index = self.traffic_lights.index(tf)
         cross = self.traffic_lights.crossings[index]
 
-        idl0 = self.detectors.get(detector[0])
-        idl1 = self.detectors.get(detector[1])
+        letra = detector[0][0]
+        idl0=0
+        idl1=0
+        for x in detector:
+            if(x[0] == letra):
+                idl0+=self.detectors.get(x)
+            else:
+                idl1+=self.detectors.get(x)
 
         '''lr0 = traci.lanearea.getLastStepVehicleIDs(detector[0])
         lr1 = traci.lanearea.getLastStepVehicleIDs(detector[1])
@@ -61,7 +67,7 @@ class Manage():
                 self.signals[index]=0
     
     # arrival time at traffic light
-    def attl(self,detector,tf,i):
+    def ffat(self,detector,tf,i):
         index = self.traffic_lights.index(tf)
         order = self.traffic_lights.order[index]
         if(len(order)>0):
@@ -159,8 +165,8 @@ class Manage():
                     self.lqf(detector,tf,i)
                 elif(alg=='zip'):
                     self.zip(detector,tf,i)
-                elif(alg=='attl'):
-                    self.attl(detector,tf,i)
+                elif(alg=='ffat'):
+                    self.ffat(detector,tf,i)
                 i+=1
             self.time_e = time.time()
             self.step = steps
